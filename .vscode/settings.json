@@ -1,0 +1,29 @@
+{
+  "typescript.format.enable": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.debug": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.suggest.autoImports": false,
+  "rest-client.environmentVariables": {
+    "$shared": {},
+    "production": {
+      "GRAPHQL_URL": "https://f8u9rjdod4.execute-api.ap-northeast-1.amazonaws.com/prod/graphql"
+    },
+    "staging": {
+      "GRAPHQL_URL": "https://7cvjkrx7gi.execute-api.ap-northeast-1.amazonaws.com/prod/graphql",
+      "API_KEY": "da2-usgxt2wktzhvtka3zinxpdolli"
+    },
+    "develop": {
+      "GRAPHQL_URL": "https://qc5kjhsmql.execute-api.ap-northeast-1.amazonaws.com/prod/graphql",
+      "API_KEY": "da2-usgxt2wktzhvtka3zinxpdolli"
+    }
+  },
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow": "/.github/workflows/**/*.yml"
+  }
+}
