@@ -17,11 +17,15 @@
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",
+    "codegen": "graphql-codegen --config codegen.yml",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run lint"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.3.0",
+    "@graphql-codegen/typescript": "^2.4.1",
+    "@graphql-codegen/typescript-resolvers": "^2.4.2",
     "@types/node": "^14.11.2",
     "gts": "^3.1.0",
     "ts-node": "^10.4.0",
